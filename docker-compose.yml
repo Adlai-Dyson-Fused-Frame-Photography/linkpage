@@ -1,6 +1,6 @@
 services:
   linkpage:
-    image: ghcr.io/Adlai-Dyson-Fused-Frame-Photography/linkpage:latest
+    image: ghcr.io/adlai-dyson-fused-frame-photography/linkpage:latest
     container_name: linkpage
     restart: unless-stopped
     ports:
