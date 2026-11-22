@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin · Linkpage</title>
+<link rel="icon" href="/favicon">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<header class="top">
+  <strong class="brand">Linkpage <span>admin</span></strong>
+  <span id="status" class="status" role="status"></span>
+  <div class="tbtn">
+    <button id="btn-pv" class="btn ghost only-narrow" type="button">Preview</button>
+    <a id="view" class="btn ghost" href="/" target="_blank" rel="noopener">View live site ↗</a>
+    <button id="save" class="btn primary" type="button" disabled>Save</button>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="editor">
+    <nav id="tabs" class="tabs" aria-label="Sections"></nav>
+    <div id="panel" class="panel"><p class="muted">Loading…</p></div>
+  </aside>
+  <section class="preview" aria-label="Live preview">
+    <div class="pvbar">
+      <span class="muted">Live preview</span>
+      <div class="seg" id="devices">
+        <button type="button" data-d="mobile">Phone</button>
+        <button type="button" data-d="tablet">Tablet</button>
+        <button type="button" data-d="desktop" class="on">Desktop</button>
+      </div>
+    </div>
+    <div id="pvwrap" class="desktop"><iframe id="pv" title="Live preview of your page"></iframe></div>
+  </section>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "linkpage",
+  "version": "1.0.0",
+  "description": "A self-hosted link-in-bio page with a visual admin panel. Zero dependencies.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --no-warnings src/server.js",
+    "test": "node --no-warnings test/smoke.mjs",
+    "reset-password": "node --no-warnings src/cli.js reset-password"
+  }
+}
