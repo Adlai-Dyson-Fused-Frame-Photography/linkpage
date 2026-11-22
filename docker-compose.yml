@@ -4,7 +4,7 @@ services:
     container_name: linkpage
     restart: unless-stopped
     ports:
-      - "XXXX:3000"      # replace XXXX with a port of your choice.
+      - "8765:8765"      # replace the first 8765 with a port of your choice or leave it as default.
     volumes:
       - ./linkpage/data:/data       # this can be customised to your liking.
     environment:
